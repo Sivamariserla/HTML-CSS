@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title">Student Registration Form</h1>
+    <form action="main.py">
+        <div>
+            <label for="fn">First name:</label>
+            <input type="text" id="fn" value="First name">
+            <label for="ln">Last name:</label>
+            <input type="text" id="ln" value="Last name"> 
+        </div><br>
+        <div>
+            <label for="em">Email:</label>
+            <input type="email" id="em">  
+        </div><br>
+        <div>
+            <label for="psw">Password:</label>
+            <input type="password" id="psw">  
+        </div><br>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">  
+        </div><br>
+        <div>
+            <label>Choose the Gender</label>
+            <input type="radio" name="Gender" id="m" value="male"><label for="m">male</label>
+            <input type="radio" name="Gender" id="f" value="female"><label for="f">female</label>       
+        </div><br>
+        <div>
+            <label for="mob no">Mobile Number:</label>
+            <input type="number" id="mob no">  
+        </div><br>
+        <div>
+            <label>languages known</label>
+            <input type="checkbox" name="languages" id="en" value="english">
+            <label for="en">English</label>
+            <input type="checkbox" name="languages" id="tel" value="telugu">
+            <label for="en">Telugu</label>
+            <input type="checkbox" name="languages" id="hi" value="hindi">
+            <label for="en">Hindi</label>
+        </div><br>
+        <div>
+            <label>Choose the Course</label>
+            <select name="" id="">
+                <option value="">Please Choose</option>
+                <option value="Btech">Btech</option>
+                <option value="Mtech">Mtech</option>
+                <option value="MBA">MBA</option>
+                <option value="B.ED">B.ED</option>
+                <option value="Btech">Btech</option>
+            </select>
+        </div><br>
+        <div>
+            <label>Choose the Subjects</label>
+            <select name="" id="" multiple size="5">
+                <optgroup label="Common">
+                    <option value="">Please Choose</option>
+                    <option value="English">English</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                </optgroup>
+                <optgroup label="Mech">
+                    <option value="ED">Engineering Drawing</option>
+                    <option value="Fm">Fluid Mechanics</option>
+                </optgroup>
+                <optgroup label="CSE">
+                    <option value="cn">Computer Networks</option>
+                    <option value="DBMS">DBMS</option>
+                </optgroup>
+                <optgroup label="EEE">
+                    <option value="DSP">DSP</option>
+                    <option value="VLSI">VLSI</option>
+                </optgroup>
+            </select>
+        </div><br>
+        <Div>
+            <label>Feedback</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </Div><br>
+        <div>
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>
